@@ -1,8 +1,6 @@
 name: Publish Docker
 on: 
-  workflow_call:
-    paths:
-      - 'docker/Dockerfile'
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
